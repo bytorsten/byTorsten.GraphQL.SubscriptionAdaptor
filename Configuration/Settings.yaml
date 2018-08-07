@@ -1,0 +1,6 @@
+Neos:
+  Flow:
+    object:
+      includeClasses:
+        'bytorsten.pubsubredis':
+          - .*
