@@ -1,0 +1,28 @@
+{
+    "description": "flow adaptor for graphql subscriptions",
+    "type": "neos-package",
+    "name": "bytorsten/graphql-subscriptions-adaptor",
+    "authors": [
+        {
+            "name": "Torsten Blindert",
+            "email": "info@by-torsten.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "neos/flow": "~5.0.0",
+        "bytorsten/graphql-subscriptions": "*",
+        "wwwision/graphql": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "byTorsten\\GraphQL\\SubscriptionsAdaptor\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "byTorsten.GraphQL.SubscriptionsAdaptor"
+        }
+    }
+}
+

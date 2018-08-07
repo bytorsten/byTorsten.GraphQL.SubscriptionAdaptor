@@ -1,0 +1,6 @@
+byTorsten\GraphQL\Subscriptions\PubSubInterface:
+  scope: singleton
+  className: byTorsten\GraphQL\Subscriptions\PubSub\SyncPubSub
+
+byTorsten\GraphQL\Subscriptions\PubSub\SyncPubSub:
+  scope: singleton
