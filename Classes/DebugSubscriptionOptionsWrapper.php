@@ -85,7 +85,7 @@ class DebugSubscriptionOptionsWrapper extends SubscriptionOptions
         $this->debug('Received operation request:');
         $this->debug('  Operation ID: <success>%s</success>', [$message['id'] ?? 'undefined'], false);
         $this->debug('  Operation Name: <success>%s</success>', [$parameters->getOperationName()], false);
-        $this->debug('  Query: <success>%s</success>', [preg_replace( "/\r|\n/", '', $parameters->getQuery())], false);
+        $this->debug('  Query: <success>%s</success>', [preg_replace("/\r|\n/", '', $parameters->getQuery())], false);
 
         $variables = $parameters->getVariables();
         $this->debug('  Variables: <success>%s</success>', [count($variables) > 0 ? '' : 'none'], false);

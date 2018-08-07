@@ -66,7 +66,7 @@ class GraphQLCommandController extends CommandController
         }
 
         $this->pubSub->setup($loop)->then(function () use ($server) {
-           $this->outputFormatted('Configured pubSub <success>%s</success>', [get_class($this->pubSub)]);
+            $this->outputFormatted('Configured pubSub <success>%s</success>', [get_class($this->pubSub)]);
         }, function (\Throwable $error) use ($loop) {
             $this->outputFormatted('Failed to configure pubSub "%s":', [get_class($this->pubSub)]);
             $this->outputFormatted('<error>%s</error>', [$error->getMessage()]);

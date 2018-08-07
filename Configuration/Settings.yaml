@@ -4,3 +4,5 @@ Neos:
       includeClasses:
         'bytorsten.pubsubredis':
           - .*
+        'bytorsten.pubsubsocket':
+          - .*
